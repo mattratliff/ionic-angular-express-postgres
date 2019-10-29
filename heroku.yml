@@ -4,5 +4,5 @@ setup:
     as: DATABASE
 build:
   docker:
-    web: client/Dockerfile
-    worker: server/Dockerfile
+    web: ionic-client/Dockerfile
+    worker: express-server/Dockerfile
