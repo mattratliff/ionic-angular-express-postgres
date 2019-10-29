@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "pean",
+    "host": "db",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "ppcrliddmyexey",
+    "password": "0629334320d3e18153781fae7ca5579e5bebe21ecd2827d96b1e2bc769b11277",
+    "database": "denrkfm6ba1ldf",
+    "host": "ec2-23-23-182-18.compute-1.amazonaws.com",
+    "dialect": "postgres"
+  },
+  "production": {
+      "username": "ppcrliddmyexey",
+      "password": "0629334320d3e18153781fae7ca5579e5bebe21ecd2827d96b1e2bc769b11277",
+      "database": "denrkfm6ba1ldf",
+      "host": "ec2-23-23-182-18.compute-1.amazonaws.com",
+      "dialect": "postgres"
+  }
+}
