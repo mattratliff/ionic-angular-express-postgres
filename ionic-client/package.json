@@ -5,10 +5,11 @@
   "homepage": "http://ionicframework.com/",
   "private": true,
   "scripts": {
-    "start": "ionic-app-scripts serve",
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "lint": "ionic-app-scripts lint"
+    "ng": "ng",
+    "start": "ng serve --address 0.0.0.0 --port 8100",
+    "clean": "ng clean",
+    "build": "ng build",
+    "lint": "ng lint"
   },
   "dependencies": {
     "@angular/animations": "5.2.11",
