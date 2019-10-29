@@ -1,0 +1,30 @@
+version: "3"
+services:     
+  db:
+    image: postgres
+    container_name: pean_dd
+    ports:
+      - "5432:5432"
+      - "15432:5432"
+    environment:
+      - POSTGRES_DB=pean
+  server:
+    build: express-server
+    container_name: express-server
+    environment:
+      - DATABASE_URL=postgres://postgres@db/pean
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./express-server:/app
+    links:
+      - db
+    depends_on:
+      - db
+  client:
+    build: ionic-client
+    container_name: ionic-client
+    ports:
+      - "8100:8100"
+    volumes:
+      - ./ionic-client:/app
