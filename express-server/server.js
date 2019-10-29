@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Set our api routes
 app.use('/', api);
 
-const port = process.env.PORT || '8000';
+const port = (process.env.PORT, '0.0.0.0')
 app.set('port', port);
 
 // _Create HTTP server._
