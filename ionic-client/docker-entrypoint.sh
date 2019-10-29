@@ -1,1 +1,1 @@
-ionic serve 8100 --address 0.0.0.0
+ionic serve
