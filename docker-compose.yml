@@ -2,7 +2,7 @@ version: "3"
 services:     
   db:
     image: postgres
-    container_name: pean_dd
+    container_name: pean_db
     ports:
       - "5432:5432"
       - "15432:5432"
