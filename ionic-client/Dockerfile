@@ -5,10 +5,12 @@ WORKDIR /app
 COPY package*.json ./
 
 RUN npm install
-RUN npm install -g ionic
 
 COPY . /app
 
 EXPOSE 8100
 
-CMD ["ionic",  "serve", "8100", "--address", "0.0.0.0"]
+# Serve the app
+ADD ./docker-entrypoint.sh /
+RUN chmod 755 /docker-entrypoint.sh
+CMD ["/docker-entrypoint.sh"]
