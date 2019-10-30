@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserModel } from '../user';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-tab1',
@@ -7,6 +9,10 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  constructor(public userService: UserService) {
+    this.userService.getusers().subscribe(users => {
+      console.log("users = "+JSON.stringify(users))
+    })
+  }
 
 }
