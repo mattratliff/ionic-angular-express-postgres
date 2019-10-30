@@ -1,4 +1,4 @@
-FROM node:8.11.2-alpine as ionic-client
+FROM node:12-alpine as ionic-client
 
 WORKDIR /app
 

@@ -1,5 +1,5 @@
  # Create image based on the official Node 6 image from the dockerhub
-FROM node:10 as express-server
+FROM node:12 as express-server
 
 RUN apt update && apt install -y postgresql-client
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh

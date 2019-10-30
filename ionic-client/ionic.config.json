@@ -1,5 +1,5 @@
 {
-  "name": "Ionic-Docker",
+  "name": "ionic-client",
   "integrations": {},
-  "type": "ionic-angular"
+  "type": "angular"
 }
