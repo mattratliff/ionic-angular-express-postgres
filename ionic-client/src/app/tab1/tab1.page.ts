@@ -9,10 +9,13 @@ import { UserService } from '../../services/user.service';
 })
 export class Tab1Page {
 
-  constructor(public userService: UserService) {
-    this.userService.getusers().subscribe(users => {
-      console.log("users = "+JSON.stringify(users))
-    })
-  }
+  users: any;
 
+  constructor(public userService: UserService) {
+    this.users = [];
+    this.userService.getusers().subscribe(users => {
+      this.users = users;
+      })
+
+  }
 }

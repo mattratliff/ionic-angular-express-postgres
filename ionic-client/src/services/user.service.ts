@@ -12,9 +12,9 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  public getusers(): Observable<IUser> {
+  public getusers(): Observable<any> {
     let headers = new HttpHeaders();
     headers = headers.set('Content-Type', 'application/json; charset=utf-8');
-    return this.http.get<IUser>(`${this.API_URL}/getusers`, { headers: headers });
+    return this.http.get<any>(`${this.API_URL}/getusers`, { headers: headers });
   }
 }
