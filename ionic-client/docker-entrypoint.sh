@@ -1,1 +1,1 @@
-ionic serve $PORT --address 0.0.0.0
+ionic serve $PORT
