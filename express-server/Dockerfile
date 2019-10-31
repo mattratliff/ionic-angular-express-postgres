@@ -23,7 +23,11 @@ COPY . /app
 EXPOSE 8000
 EXPOSE 5432
 
+RUN cd /app
+
+CMD ["npm", "start"]
+
 # Serve the app
-ADD ./docker-entrypoint.sh /
-RUN chmod 755 /docker-entrypoint.sh
-CMD ["/docker-entrypoint.sh"]
+# ADD ./docker-entrypoint.sh /
+# RUN chmod 755 /docker-entrypoint.sh
+# CMD ["/docker-entrypoint.sh"]
