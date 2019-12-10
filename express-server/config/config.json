@@ -2,7 +2,7 @@
   "development": {
     "username": "postgres",
     "password": null,
-    "database": "pean",
+    "database": "iaep",
     "host": "db",
     "dialect": "postgres"
   },

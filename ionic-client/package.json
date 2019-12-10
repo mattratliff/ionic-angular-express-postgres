@@ -5,9 +5,9 @@
   "homepage": "https://ionicframework.com/",
   "scripts": {
     "ng": "ng",
-    "serve" : "node --max-old-space-size=4096",
     "start": "ng serve",
     "build": "ng build",
+    "build:prod": "npm run build -- --output-path=./dist/out --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node server.js",
     "bash": "bash",
-    "sequelize": "sequelize"
+    "sequelize": "sequelize",
+    "generateseed": "sequelize seed:generate --name ",
+    "createusers": "sequelize db:seed:all"
   },
   "dependencies": {
     "body-parser": "^1.18.3",

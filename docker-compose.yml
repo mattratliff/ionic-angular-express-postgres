@@ -2,18 +2,18 @@ version: "3"
 services:     
   db:
     image: postgres
-    container_name: pean_db
+    container_name: iaep_db
     ports:
       - "5432:5432"
       - "15432:5432"
     environment:
-      - POSTGRES_DB=pean
+      - POSTGRES_DB=iaep
       - PORT=5432
   server:
     build: express-server
     container_name: express-server
     environment:
-      - DATABASE_URL=postgres://postgres@db/pean
+      - DATABASE_URL=postgres://postgres@db/iaep
     ports:
       - "8000:8000"
     environment:
